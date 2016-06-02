@@ -1,5 +1,17 @@
-header.background-header
-  .header-box
-    h1 Nina Petropoulos
-    p.text-muted A curious creative
-  .vertical-line
+header
+	.container
+		h1 {{ page.title }}
+		p.summary  {{ page.summary }}
+		.tag-wrap
+			.rounded
+				p Fiction
+			.rounded
+				p {{ page.author }}
+			.rounded
+				p Word Count
+		.rating-wrap
+			.star
+			.star
+			.star
+			.star
+			.star

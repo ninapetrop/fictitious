@@ -4,7 +4,9 @@
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,300);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Righteous);
+@import url(1-base/skeleton.css);
 html {
   font-family: sans-serif;
   /* 1 */
@@ -354,6 +356,9 @@ td,
 th {
   padding: 0; }
 
+* {
+  box-sizing: border-box; }
+
 img::-moz-selection {
   background: transparent; }
 
@@ -370,7 +375,82 @@ body {
 body {
   font-size: 14px;
   line-height: 1.6;
-  font-family: Open Sans, sans-serif;
+  font-family: Montserrat, sans-serif;
   color: #566270;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%; }
+
+header {
+  background: #34314C;
+  color: white;
+  text-align: center;
+  height: 390px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
+  header .container {
+    width: 737px; }
+    header .container h1 {
+      font-size: 48px;
+      font-family: Righteous, cursive; }
+      header .container h1 a {
+        color: white;
+        text-decoration: none; }
+    header .container .tag-wrap {
+      display: -webkit-inline-flex;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -webkit-justify-content: space-around;
+          -ms-flex-pack: distribute;
+              justify-content: space-around;
+      width: 450px; }
+      header .container .tag-wrap .rounded {
+        border-radius: 10px;
+        background: #FF7473;
+        color: white;
+        min-width: 125px;
+        height: 27px;
+        padding-top: 3px; }
+
+.articleCount2 {
+  background: #565563; }
+
+.articleCount3 {
+  background: #4A314C; }
+
+nav {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 10px;
+  height: 45px;
+  font-size: 16px;
+  font-family: Righteous, cursive;
+  text-transform: uppercase;
+  box-shadow: 0 2px 4px 0 rgba(225, 225, 225, 0.3);
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  background: white; }
+  nav a {
+    color: #9B9B9B; }
+
+.post-content {
+  background-color: white;
+  padding: 63px 85px; }
+  .post-content p {
+    font-size: 14px;
+    font-weight: 300;
+    color: black; }

@@ -2,23 +2,22 @@
 layout: default
 title: Home
 ---
-
-{% include header.html %}
-
-<div class="row">
-  <div class="twelve columns">
-    <h1>Twelve Column</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, officia hic maiores, corrupti doloremque officiis, commodi optio asperiores vitae quisquam rem, ab qui libero. Cumque praesentium accusantium, soluta placeat ullam.</p>
-  </div>
-</div>
-
-<div class="row">
-  <div class="eight columns">
-    <h1>Twelve Column</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, officia hic maiores, corrupti doloremque officiis, commodi optio asperiores vitae quisquam rem, ab qui libero. Cumque praesentium accusantium, soluta placeat ullam.</p>
-  </div>
-  <div class="four columns">
-    <h1>Twelve Column</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, officia hic maiores, corrupti doloremque officiis, commodi optio asperiores vitae quisquam rem, ab qui libero. Cumque praesentium accusantium, soluta placeat ullam.</p>
-  </div>
-</div>
+{% for post in site.posts %}
+	<header class='articleCount{{ forloop.index }}'>
+		<div class='container'>
+			<h1><a href='{{ post.url }}'>{{ post.title }}</a></h1>
+			<p class='post-summary'>{{ post.summary }}</p>
+			<div class='tag-wrap'>
+				<div class='rounded'>
+					<p class='genre'>{{ post.genre }}</p>
+				</div>
+				<div class='rounded'>
+					<p class='author'>{{ post.author }}</p>
+				</div>
+				<div class='rounded'>
+					<p class='words'>{{ post.words }}</p>
+				</div>
+			</div>
+		</div>
+	</header>
+{% endfor %}

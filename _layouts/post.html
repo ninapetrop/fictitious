@@ -3,6 +3,24 @@ layout: default
 title: {{ page.title }}
 ---
 {% include header.html %}
-<div class='container post-content'>
-	{{ content }}
+
+<div class='article-container'>
+	<aside id='article-info'>
+		<div class='wrap'>
+			<h4>{{ page.title }}</h4>
+			<p>
+			<i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i>
+			</p>
+
+			<p class='text-mute'>
+				Rate this peice to learn more about the author.
+			</p>
+		</div>
+	</aside>
+
+	<article>
+		{{ content }}
+	</article>
+
+	<aside id='social-media'></aside>
 </div>

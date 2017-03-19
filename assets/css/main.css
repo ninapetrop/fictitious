@@ -535,10 +535,13 @@ nav {
         background-size: cover;
         background-position: center center; }
 
-header.feature-article {
+.feature-article {
   background: #34314C;
   color: white;
-  padding: 100px 10px; }
+  padding: 100px 10px 50px 10px; }
+  .feature-article .carousel-cell {
+    padding: 0 100px;
+    width: 100%; }
 
 .article-wrap {
   margin-top: 20px; }

@@ -2,7 +2,7 @@
 layout: default
 title: Home
 ---
-{% for post in site.posts limit:1 %}
+<!-- {% for post in site.posts limit:1 %}
 	<header class='articleCount{{ forloop.index }} feature-article'>
 		<div class='container'>
 			<h1><a href='{{ post.url }}'>{{ post.title }}</a></h1>
@@ -20,7 +20,36 @@ title: Home
 			</div>
 		</div>
 	</header>
-{% endfor %}
+{% endfor %} -->
+
+
+<header class='feature-article'>
+	<div class='container'>
+		<div class="main-carousel" data-flickity='{ "wrapAround": true }'>
+			{% for post in site.posts limit:3 %}
+		  <div class="carousel-cell">
+				<h1><a href='{{ post.url }}'>{{ post.title }}</a></h1>
+				<p class='post-summary'>{{ post.summary }}</p>
+				<div class='tag-wrap'>
+					<div class='rounded'>
+						<p class='genre'>{{ post.genre }}</p>
+					</div>
+					<div class='rounded'>
+						<p class='author'>{{ post.author }}</p>
+					</div>
+					<div class='rounded'>
+						<p class='words'>{{ post.words }}</p>
+					</div>
+				</div>
+		  </div>
+		  {% endfor %}
+		</div>
+	</div>
+</header>
+
+
+
+
 
 <div class='container'>
 

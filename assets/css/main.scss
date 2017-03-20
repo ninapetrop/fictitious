@@ -5,7 +5,7 @@
 // Base
 @import "1-base/base.sass";
 @import "1-base/vars.sass";
-@import "1-base/skeleton.css";
+//@import "1-base/skeleton.css";
 
 // Modules
 
@@ -14,3 +14,4 @@
 @import "3-sections/nav.sass";
 //Layouts
 @import "4-layouts/post.sass";
+@import "4-layouts/home.sass";

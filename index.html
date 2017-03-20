@@ -2,8 +2,8 @@
 layout: default
 title: Home
 ---
-{% for post in site.posts %}
-	<header class='articleCount{{ forloop.index }}'>
+{% for post in site.posts limit:1 %}
+	<header class='articleCount{{ forloop.index }} feature-article'>
 		<div class='container'>
 			<h1><a href='{{ post.url }}'>{{ post.title }}</a></h1>
 			<p class='post-summary'>{{ post.summary }}</p>
@@ -21,3 +21,30 @@ title: Home
 		</div>
 	</header>
 {% endfor %}
+
+<div class='container'>
+
+	{% for post in site.posts offset: 1 %}
+		<div class='article-wrap'>
+
+			<header>
+				<h2>
+					<a href='{{ post.url }}'>{{ post.title }}</a>
+					<br>
+					<b><span class='post-date'>{{ post.date | date_to_string }}</span>{{ post.author}}</b>
+				</h2>
+
+			</header>
+
+			<article class='post-summary'>
+				{{ post.summary }}
+
+			</article>
+
+
+			<div class='divider'></div>
+
+		</div>
+	{% endfor %}
+
+</div>

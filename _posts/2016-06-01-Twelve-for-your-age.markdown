@@ -3,7 +3,7 @@ layout: post
 title:  "Ficticious, A Theme For Creators"
 date:   2014-04-20 09:11:03
 categories: reviews
-summary: Ficticious is my third Jekyll theme. Check out the quirks, features, styles, and installation guide in this demo article. For more information visit the repo on GitHub to check out this theme and others! Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem pariatur?
+summary: Ficticious is my third Jekyll theme. Check out the quirks, features, styles, and installation guide in this demo article. For more information visit the repo on GitHub to check out this theme and others! Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
 author: John Doe
 genre: Fiction
 words: 409

@@ -25,7 +25,7 @@ title: Home
 
 <header class='feature-article'>
 	<div class='container'>
-		<div class="main-carousel" data-flickity='{ "wrapAround": true }'>
+		<div class="main-carousel" data-flickity='{ "wrapAround": true, "autoPlay": true }'>
 			{% for post in site.posts limit:3 %}
 		  <div class="carousel-cell">
 				<h1><a href='{{ post.url }}'>{{ post.title }}</a></h1>

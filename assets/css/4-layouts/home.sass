@@ -1,7 +1,41 @@
-header.feature-article
+.feature-article
 	background: $purple
 	color: white
-	padding: 100px 10px
+	padding: 100px 10px 50px 10px
+
+	.container
+		max-width: 920px
+		text-align: center
+
+	button
+		display: none
+	/* position dots in gallery
+	.flickity-page-dots
+		//bottom: 0px
+		.dot
+			width: 12px
+			height: 12px
+			//opacity: 1
+			background: transparent
+			border: 2px solid white
+			&.is-selected
+				background: white
+
+	.carousel-cell
+		@media (min-width: 768px)
+			padding: 0 100px
+		width: 100%
+		//box-sizing: border-box
+		height: auto
+
+		h1
+			font-size: 48px
+			line-height: 1.1
+			a
+				color: white
+				text-decoration: none
+		.post-summary
+			margin: 20px auto
 
 .article-wrap
 	margin-top: 20px
@@ -14,11 +48,13 @@ header.feature-article
 
 			b
 				color: rgba(225, 116, 115, .7)
-				font-size: 14px
+				font:
+					weight: 300
+					size: 14px
 				padding-top: 0
 
 				span.post-date
-					color: rgba(74, 74, 74, .7)
+					color: rgba(74, 74, 74, 0.7)
 					font-weight: 300
 					margin-right: 25px
 
@@ -33,3 +69,8 @@ header.feature-article
 		width: 215px
 		background: #D6D2D2
 		margin-top: 30px
+
+.article-wrap:last-of-type
+	margin-bottom: 35px
+	.divider
+		display: none

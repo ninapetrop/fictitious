@@ -11,7 +11,7 @@
 		display: none
 	/* position dots in gallery
 	.flickity-page-dots
-		bottom: 0px
+		//bottom: 0px
 		.dot
 			width: 12px
 			height: 12px
@@ -48,11 +48,13 @@
 
 			b
 				color: rgba(225, 116, 115, .7)
-				font-size: 14px
+				font:
+					weight: 300
+					size: 14px
 				padding-top: 0
 
 				span.post-date
-					color: rgba(74, 74, 74, .7)
+					color: rgba(74, 74, 74, 0.7)
 					font-weight: 300
 					margin-right: 25px
 
@@ -67,3 +69,8 @@
 		width: 215px
 		background: #D6D2D2
 		margin-top: 30px
+
+.article-wrap:last-of-type
+	margin-bottom: 35px
+	.divider
+		display: none

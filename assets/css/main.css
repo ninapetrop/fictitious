@@ -382,6 +382,9 @@ body {
 .container {
   max-width: 720px;
   margin: auto; }
+  @media (max-width: 740px) {
+    .container {
+      padding: 0 10px; } }
 
 .text-mute {
   color: rgba(52, 49, 76, 0.75); }
@@ -389,7 +392,8 @@ body {
 a {
   text-decoration: none;
   color: #FF7473;
-  font-weight: 500; }
+  font-weight: 500;
+  cursor: pointer; }
   a:hover {
     text-decoration: underline; }
 
@@ -452,6 +456,29 @@ nav {
   background: white; }
   nav a {
     color: #9B9B9B; }
+
+footer {
+  background: #F5F5F5;
+  padding: 20px 0;
+  min-height: 150px;
+  text-align: center; }
+  footer h2 {
+    margin-bottom: 5px; }
+  footer p {
+    width: 280px;
+    margin: 0 auto 35px auto;
+    color: rgba(74, 74, 74, 0.7); }
+  footer ul {
+    list-style: none;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    padding-left: 0;
+    margin-top: 0; }
+    footer ul li {
+      margin: auto 10px; }
+      footer ul li a {
+        color: rgba(225, 116, 115, 0.7); }
 
 .article-container {
   display: -webkit-flex;
@@ -545,15 +572,13 @@ nav {
     text-align: center; }
   .feature-article button {
     display: none; }
-  .feature-article .flickity-page-dots {
-    bottom: 0px; }
-    .feature-article .flickity-page-dots .dot {
-      width: 12px;
-      height: 12px;
-      background: transparent;
-      border: 2px solid white; }
-      .feature-article .flickity-page-dots .dot.is-selected {
-        background: white; }
+  .feature-article .flickity-page-dots .dot {
+    width: 12px;
+    height: 12px;
+    background: transparent;
+    border: 2px solid white; }
+    .feature-article .flickity-page-dots .dot.is-selected {
+      background: white; }
   .feature-article .carousel-cell {
     width: 100%;
     height: auto; }
@@ -577,6 +602,7 @@ nav {
     text-decoration: none; }
   .article-wrap header h2 b {
     color: rgba(225, 116, 115, 0.7);
+    font-weight: 300;
     font-size: 14px;
     padding-top: 0; }
     .article-wrap header h2 b span.post-date {
@@ -591,3 +617,8 @@ nav {
     width: 215px;
     background: #D6D2D2;
     margin-top: 30px; }
+
+.article-wrap:last-of-type {
+  margin-bottom: 35px; }
+  .article-wrap:last-of-type .divider {
+    display: none; }

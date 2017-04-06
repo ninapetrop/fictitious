@@ -38,8 +38,9 @@ body
 
 .container
 	max-width: 720px
-	//padding: 5px
 	margin: auto
+	@media (max-width: 740px)
+		padding: 0 10px
 
 // Typography
 .text-mute
@@ -48,5 +49,6 @@ a
 	text-decoration: none
 	color: #FF7473
 	font-weight: 500
+	cursor: pointer
 	&:hover
 		text-decoration: underline

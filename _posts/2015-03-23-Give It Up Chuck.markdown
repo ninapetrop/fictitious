@@ -2,7 +2,7 @@
 layout: post
 title:  "Give It Up, Chuck"
 date:   2014-04-20 09:11:03
-categories: reviews
+category: Reviews
 summary: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos.
 author: John Doe
 genre: Fiction
